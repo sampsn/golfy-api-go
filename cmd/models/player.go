@@ -1,8 +1,6 @@
-package main
-
-import "github.com/google/uuid"
+package models
 
 type Player struct {
-	Id   uuid.UUID
+	Id   UUID
 	Name string
 }

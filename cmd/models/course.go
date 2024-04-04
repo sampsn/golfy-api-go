@@ -1,9 +1,7 @@
-package main
-
-import "github.com/google/uuid"
+package models
 
 type Course struct {
-	Id       uuid.UUID
+	Id       UUID
 	Name     string
 	Location string
 	Holes    int
