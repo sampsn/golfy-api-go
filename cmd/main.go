@@ -19,12 +19,20 @@ func main() {
 	courses := make(map[UUID]Course)
 
 	app.Get("/players", getPlayers)
-	app.Get("/players/:playerID")
-	app.Post("/players")
-	app.Put("/players/:playerID")
-	app.Delete("/players/:playerID")
+	// app.Post("/players")
+	// app.Put("/players/:playerID")
+	// app.Delete("/players/:playerID")
+
+	app.Get("/courses", getCourses)
+	// app.Post("/courses")
+	// app.Put("/courses/:coursesID")
+	// app.Delete("/courses/:coursesID")
 }
 
 func getPlayers(c *fiber.Ctx) error {
+	return nil
+}
+
+func getCourses(c *fiber.Ctx) error {
 	return nil
 }
